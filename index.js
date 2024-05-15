@@ -102,6 +102,15 @@ app.get("/users",authenticatedUser, async (req, res) => {
 });
 
 
+//Sample Api For all
+app.get("/",(req,res)=>{
+  res 
+  .send(`
+  <h1 style='text-align:center'>Route is running successfully
+  Try /login, /register, /users</h1>
+  `)
+})
+
 //Server is listenening
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
