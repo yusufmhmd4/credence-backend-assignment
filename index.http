@@ -22,3 +22,27 @@ Content-Type: application/json
 ###
 GET http://localhost:5000/users
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inl1c3VmQGdtYWlsLmNvbSIsImlhdCI6MTcxNTc2NzE4OH0.BPS-1Xqu9B3hhPW8bjy0reME_7WcDblUnOXaiOAV9qY
+
+
+###
+GET http://localhost:5000/items
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inl1c3VmQGdtYWlsLmNvbSIsImlhdCI6MTcxNTc2NzE4OH0.BPS-1Xqu9B3hhPW8bjy0reME_7WcDblUnOXaiOAV9qY
+
+###
+POST http://localhost:5000/items 
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inl1c3VmQGdtYWlsLmNvbSIsImlhdCI6MTcxNTc2NzE4OH0.BPS-1Xqu9B3hhPW8bjy0reME_7WcDblUnOXaiOAV9qY
+
+{
+    "name": "Harry Potter and the Order of the Phoenix",
+    "img": "https://bit.ly/2IcnSwz",
+    "summary": "Harry Potter and Dumbledore's warning about the return of Lord Voldemort is not heeded by the wizard authorities who, in turn, look to undermine Dumbledore's authority at Hogwarts and discredit Harry."
+}
+
+###
+GET http://localhost:5000/items/6645b27a1d066785958b52ac
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inl1c3VmQGdtYWlsLmNvbSIsImlhdCI6MTcxNTc2NzE4OH0.BPS-1Xqu9B3hhPW8bjy0reME_7WcDblUnOXaiOAV9qY
+
+###
+DELETE http://localhost:5000/items/6645b21c1d066785958b52a2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inl1c3VmQGdtYWlsLmNvbSIsImlhdCI6MTcxNTc2NzE4OH0.BPS-1Xqu9B3hhPW8bjy0reME_7WcDblUnOXaiOAV9qY
